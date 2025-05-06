@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>开源项目一览 - AI资源导航</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">AI资源导航</a></div>
+            <div class="nav-links">
+                <a href="tools.html">AI工具</a>
+                <a href="projects.html" class="active">开源项目</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>开源项目一览</h1>
+            <p>探索优质AI开源项目，助力你的开发之路</p>
+            <div class="category-nav">
+                <a href="#llm" class="category-link">语言模型与框架</a>
+                <a href="#training" class="category-link">模型训练与部署</a>
+                <a href="#image" class="category-link">图像生成</a>
+                <a href="#dev" class="category-link">应用开发</a>
+                <a href="#agent" class="category-link">自动化与代理</a>
+                <a href="#chinese" class="category-link">中文项目</a>
+            </div>
+        </section>
+
+        <section id="llm" class="resources">
+            <h2>🤖 语言模型与框架</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <i class="fab fa-github"></i>
+                    <h3>Hugging Face Transformers</h3>
+                    <p>流行的自然语言处理库，提供多种预训练模型</p>
+                    <div class="tags">
+                        <span class="tag">NLP</span>
+                        <span class="tag">预训练模型</span>
+                        <span class="tag">Python</span>
+                    </div>
+                    <a href="https://github.com/huggingface/transformers" target="_blank">查看项目</a>
+                </div>
+                <div class="card">
+                    <i class="fab fa-github"></i>
+                    <h3>LLaMA</h3>
+                    <p>Meta开源的大型语言模型，支持多语言处理</p>
+                    <div class="tags">
+                        <span class="tag">LLM</span>
+                        <span class="tag">多语言</span>
+                    </div>
+                    <a href="https://github.com/facebookresearch/llama" target="_blank">查看项目</a>
+                </div>
+                <div class="card">
+                    <i class="fab fa-github"></i>
+                    <h3>OpenLLaMA</h3>
+                    <p>LLaMA模型的开源复现版本，使用许可更宽松</p>
+                    <div class="tags">
+                        <span class="tag">LLM</span>
+                        <span class="tag">开源协议友好</span>
+                    </div>
+                    <a href="https://github.com/openlm-research/open_llama" target="_blank">查看项目</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="training" class="resources">
+            <h2>⚡ 模型训练与部署</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <i class="fab fa-github"></i>
+                    <h3>DeepSpeed</h3>
+                    <p>微软开源的深度学习训练优化库，支持大规模模型训练</p>
+                    <div class="tags">
+                        <span class="tag">分布式训练</span>
+                        <span class="tag">性能优化</span>
+                    </div>
+                    <a href="https://github.com/microsoft/DeepSpeed" target="_blank">查看项目</a>
+                </div>
+                <div class="card">
+                    <i class="fab fa-github"></i>
+                    <h3>vLLM</h3>
+                    <p>高性能LLM推理和服务框架</p>
+                    <div class="tags">
+                        <span class="tag">推理加速</span>
+                        <span class="tag">服务部署</span>
+                    </div>
+                    <a href="https://github.com/vllm-project/vllm" target="_blank">查看项目</a>
+                </div>
+                <div class="card">
+                    <i class="fab fa-github"></i>
+                    <h3>ONNX Runtime</h3>
+                    <p>跨平台机器学习推理加速框架</p>
+                    <div class="tags">
+                        <span class="tag">推理优化</span>
+                        <span class="tag">跨平台</span>
+                    </div>
+                    <a href="https://github.com/microsoft/onnxruntime" target="_blank">查看项目</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="image" class="resources">
+            <h2>🎨 图像生成</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <i class="fab fa-github"></i>
+                    <h3>Stable Diffusion</h3>
+                    <p>开源图像生成模型，支持本地部署</p>
+                    <div class="tags">
+                        <span class="tag">文生图</span>
+                        <span class="tag">本地部署</span>
+                    </div>
+                    <a href="https://github.com/CompVis/stable-diffusion" target="_blank">查看项目</a>
+                </div>
+                <div class="card">
+                    <i class="fab fa-github"></i>
+                    <h3>ComfyUI</h3>
+                    <p>功能强大的Stable Diffusion图形化工作流程工具</p>
+                    <div class="tags">
+                        <span class="tag">工作流</span>
+                        <span class="tag">可视化</span>
+                    </div>
+                    <a href="https://github.com/comfyanonymous/ComfyUI" target="_blank">查看项目</a>
+                </div>
+                <div class="card">
+                    <i class="fab fa-github"></i>
+                    <h3>ControlNet</h3>
+                    <p>通过额外条件控制Stable Diffusion图像生成</p>
+                    <div class="tags">
+                        <span class="tag">条件控制</span>
+                        <span class="tag">精确生成</span>
+                    </div>
+                    <a href="https://github.com/lllyasviel/ControlNet" target="_blank">查看项目</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="dev" class="resources">
+            <h2>💻 应用开发</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <i class="fab fa-github"></i>
+                    <h3>LangChain</h3>
+                    <p>开源的LLM应用开发框架，简化AI应用构建流程</p>
+                    <div class="tags">
+                        <span class="tag">应用框架</span>
+                        <span class="tag">Python/JS</span>
+                    </div>
+                    <a href="https://github.com/hwchase17/langchain" target="_blank">查看项目</a>
+                </div>
+                <div class="card">
+                    <i class="fab fa-github"></i>
+                    <h3>LlamaIndex</h3>
+                    <p>构建和查询您的LLM知识库的数据框架</p>
+                    <div class="tags">
+                        <span class="tag">知识库</span>
+                        <span class="tag">数据处理</span>
+                    </div>
+                    <a href="https://github.com/jerryjliu/llama_index" target="_blank">查看项目</a>
+                </div>
+                <div class="card">
+                    <i class="fab fa-github"></i>
+                    <h3>Text Generation WebUI</h3>
+                    <p>用于运行大型语言模型的渐进式Web界面</p>
+                    <div class="tags">
+                        <span class="tag">WebUI</span>
+                        <span class="tag">易用性</span>
+                    </div>
+                    <a href="https://github.com/oobabooga/text-generation-webui" target="_blank">查看项目</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="agent" class="resources">
+            <h2>🤖 自动化与代理</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <i class="fab fa-github"></i>
+                    <h3>AutoGPT</h3>
+                    <p>自主式GPT-4代理系统，可自动完成复杂任务</p>
+                    <div class="tags">
+                        <span class="tag">自主代理</span>
+                        <span class="tag">任务自动化</span>
+                    </div>
+                    <a href="https://github.com/Significant-Gravitas/Auto-GPT" target="_blank">查看项目</a>
+                </div>
+                <div class="card">
+                    <i class="fab fa-github"></i>
+                    <h3>AgentGPT</h3>
+                    <p>在浏览器中组装和部署自主AI代理</p>
+                    <div class="tags">
+                        <span class="tag">Web部署</span>
+                        <span class="tag">可视化</span>
+                    </div>
+                    <a href="https://github.com/reworkd/AgentGPT" target="_blank">查看项目</a>
+                </div>
+                <div class="card">
+                    <i class="fab fa-github"></i>
+                    <h3>GPT Engineer</h3>
+                    <p>规范化的AI编码代理，可完成完整的开发任务</p>
+                    <div class="tags">
+                        <span class="tag">代码生成</span>
+                        <span class="tag">项目开发</span>
+                    </div>
+                    <a href="https://github.com/AntonOsika/gpt-engineer" target="_blank">查看项目</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="chinese" class="resources">
+            <h2>🇨🇳 中文开源项目</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <i class="fab fa-github"></i>
+                    <h3>ChatGLM</h3>
+                    <p>清华开源的中英双语对话语言模型</p>
+                    <div class="tags">
+                        <span class="tag">中文优化</span>
+                        <span class="tag">对话模型</span>
+                    </div>
+                    <a href="https://github.com/THUDM/ChatGLM-6B" target="_blank">查看项目</a>
+                </div>
+                <div class="card">
+                    <i class="fab fa-github"></i>
+                    <h3>Chinese-LLaMA-Alpaca</h3>
+                    <p>中文LLaMA模型和指令精调版本</p>
+                    <div class="tags">
+                        <span class="tag">中文优化</span>
+                        <span class="tag">指令精调</span>
+                    </div>
+                    <a href="https://github.com/ymcui/Chinese-LLaMA-Alpaca" target="_blank">查看项目</a>
+                </div>
+                <div class="card">
+                    <i class="fab fa-github"></i>
+                    <h3>FastGPT</h3>
+                    <p>基于 ChatGPT API 的知识库问答系统</p>
+                    <div class="tags">
+                        <span class="tag">知识库</span>
+                        <span class="tag">问答系统</span>
+                    </div>
+                    <a href="https://github.com/labring/FastGPT" target="_blank">查看项目</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AI资源导航 - 你的人工智能资源中心</p>
+    </footer>
+</body>
+</html>
